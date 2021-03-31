@@ -1,3 +1,34 @@
-.intro-title {
-    color: darkslategray;
+body {
+    margin: unset;
+}
+
+.nav-bar {
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+    color: white;
+    padding: 1%;
+    position: fixed;
+    top: 0;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: dimgray;
+}
+
+.cover {
+    height: 100vh;
+    background-color: darkslategray;
+}
+
+.cover-title {
+    color: white;
+}
+
+.intro {
+    background-color: whitesmoke;
 }
