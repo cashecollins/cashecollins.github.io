@@ -75,7 +75,16 @@ section {
 
 .cover-title {
     color: white;
+    margin-bottom: 20px;
     z-index: 1000;
+}
+
+h1.cover-title {
+    font-size: 2em;
+}
+
+div.cover-title {
+    font-size: 1.5em;
 }
 
 .intro {
@@ -111,7 +120,13 @@ section {
 }
 
 .project-cell:hover {
+    transition: .3s;
     box-shadow: 5px 5px 5px #888888;
+}
+
+.project-cell:hover .project-cell-title {
+    transition: .5s;
+    padding: 4% 0;
 }
 
 .live-stg {
@@ -133,6 +148,7 @@ section {
 }
 
 .project-cell-title {
+    transition: .5s;
     background-color: black;
     opacity: 70%;
     color: white;
