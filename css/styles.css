@@ -21,7 +21,6 @@ section {
 
 .nav-bar {
     width: 100%;
-    padding: 25px 0;
     position: fixed;
     top: 0;
     font-size: larger;
@@ -31,6 +30,7 @@ section {
 .nav-bar.dark {
     transition: .4s;
     color: white;
+    padding: 40px 0;
 }
 
 .nav-bar.light {
@@ -39,6 +39,7 @@ section {
     background-color: whitesmoke;
     opacity: 1;
     border-bottom: 1px solid darkslategray;
+    padding: 25px 0;
 }
 
 .nav-bar-content-container {
