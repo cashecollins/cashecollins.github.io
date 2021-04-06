@@ -22,7 +22,7 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: dimgray;
+    background-color: darkslategray;
 }
 
 .cover {
@@ -64,10 +64,34 @@ h1 {
     align-items: flex-end;
     justify-content: center;
     background-color: whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+
+.project-cell:hover {
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.live-stg {
+    background-image: url('assets/lsg-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.neural-network {
+    background-image: url('assets/nueral-network.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stat-tracker {
+    background-image: url('assets/stat-tracker.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .project-cell-title {
-    background-color: darkslategray;
+    background-color: black;
     opacity: 70%;
     color: white;
     width: 100%;
@@ -78,4 +102,12 @@ h1 {
 
 .talent {
     background-color: whitesmoke;
+}
+
+.talent-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    width: 60%;
+    height: 40%;
 }
