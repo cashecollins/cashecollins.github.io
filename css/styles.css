@@ -95,15 +95,28 @@ div.cover-title {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-column-gap: 10%;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
     width: 60%;
+    height: 100%;
 }
 
 .intro-image {
     height: 300px;
     width: 300px;
     background-color: green;
+}
+
+.intro-graph-container {
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-column-gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+.intro-graph-bar {
+    width: 25px;
 }
 
 .projects {
