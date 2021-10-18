@@ -98,7 +98,7 @@ div.cover-title {
     align-items: center;
     justify-items: center;
     width: 60%;
-    height: 100%;
+    height: 80%;
 }
 
 .intro-image {
@@ -111,12 +111,13 @@ div.cover-title {
     display: grid;
     grid-template-columns: repeat(1fr, 5);
     grid-column-gap: 25px;
-    align-items: center;
+    align-items: end;
     justify-items: center;
 }
 
 .intro-graph-bar {
     width: 25px;
+    background-color: green;
 }
 
 .projects {
