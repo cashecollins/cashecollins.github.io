@@ -109,7 +109,7 @@ div.cover-title {
 
 .intro-graph-container {
     display: grid;
-    grid-template-columns: repeat(1fr, 5);
+    grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 25px;
     align-items: end;
     justify-items: center;
