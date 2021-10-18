@@ -94,30 +94,47 @@ div.cover-title {
 .intro-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-column-gap: 10%;
+    grid-column-gap: 10px;
     align-items: center;
     justify-items: center;
-    width: 60%;
-    height: 80%;
+    width: 75%;
+    height: 60%;
 }
 
 .intro-image {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     background-color: green;
+    margin: auto;
+}
+
+.intro-paragraph {
+    padding: 10px 0;
 }
 
 .intro-graph-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 25px;
-    align-items: end;
-    justify-items: center;
+    height: 80%;
+    width: 60%;
+}
+
+.intro-graph-subject {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: center;
+    height: 100%;
+}
+
+.intro-graph-subject-label {
+    padding: 10px 0;
 }
 
 .intro-graph-bar {
-    width: 25px;
+    width: 50px;
     background-color: green;
+    transition: height 1.25s ease;
 }
 
 .projects {
