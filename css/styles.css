@@ -93,18 +93,19 @@ div.cover-title {
 
 .intro-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-column-gap: 10px;
+    grid-template-columns: 1.5fr 2fr;
+    grid-column-gap: 10%;
     align-items: center;
     justify-items: center;
     width: 75%;
     height: 60%;
+    font-size: large;
 }
 
 .intro-image {
     height: 200px;
     width: 200px;
-    background-color: green;
+    background-color: #C19A6B;
     margin: auto;
 }
 
@@ -115,8 +116,9 @@ div.cover-title {
 .intro-graph-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
 }
 
 .intro-graph-subject {
@@ -133,8 +135,18 @@ div.cover-title {
 
 .intro-graph-bar {
     width: 50px;
-    background-color: green;
-    transition: height 1.25s ease;
+    background-color: #C19A6B;
+    color: #C19A6B;
+    transition: height 1.25s ease, color 0.5s ease;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro-graph-bar:hover {
+    color: white;
 }
 
 .projects {
