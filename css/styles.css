@@ -1,3 +1,9 @@
+:root {
+    --primary-color: darkslategray;
+    --secondary-color: #C19A6B;
+    --light-color: whitesmoke;
+}
+
 * {
     scroll-behavior: smooth !important;
 }
@@ -16,7 +22,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: darkslategray;
+    background-color: var(--primary-color);
 }
 
 .nav-bar {
@@ -29,16 +35,16 @@ section {
 
 .nav-bar.dark {
     transition: .4s;
-    color: white;
+    color: var(--light-color);
     padding: 40px 0;
 }
 
 .nav-bar.light {
     transition: .4s;
-    color: darkslategray;
-    background-color: whitesmoke;
+    color: var(--primary-color);
+    background-color: var(--light-color);
     opacity: 1;
-    border-bottom: 1px solid darkslategray;
+    border-bottom: 1px solid var(--primary-color);
     padding: 25px 0;
 }
 
@@ -74,7 +80,7 @@ section {
 }
 
 .cover-title {
-    color: white;
+    color: var(--light-color);
     margin-bottom: 20px;
     z-index: 1000;
 }
@@ -88,7 +94,7 @@ div.cover-title {
 }
 
 .intro {
-    background-color: whitesmoke;
+    background-color: var(--light-color);
 }
 
 .intro-container {
@@ -105,7 +111,7 @@ div.cover-title {
 .intro-image {
     height: 200px;
     width: 200px;
-    background-color: #C19A6B;
+    background-color: var(--secondary-color);
     margin: auto;
 }
 
@@ -136,7 +142,7 @@ div.cover-title {
 .intro-graph-bar {
     width: 50px;
     background-color: #C19A6B;
-    color: #C19A6B;
+    color: var(--secondary-color);
     transition: height 1.25s ease, color 0.5s ease;
     height: 0%;
     display: flex;
@@ -146,11 +152,11 @@ div.cover-title {
 }
 
 .intro-graph-bar:hover {
-    color: white;
+    color: var(--light-color);
 }
 
 .projects {
-    color: white;
+    color: var(--light-color);
 }
 
 .projects-container {
@@ -165,7 +171,7 @@ div.cover-title {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: var(--light-color);
     box-shadow: 5px 5px 5px black;
     cursor: pointer;
 }
@@ -210,7 +216,7 @@ div.cover-title {
 }
 
 .talent {
-    background-color: whitesmoke;
+    background-color: var(--light-color);
 }
 
 .talent-container {
@@ -222,5 +228,5 @@ div.cover-title {
 }
 
 .contact {
-    color: white;
+    color: var(--light-color);
 }

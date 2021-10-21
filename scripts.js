@@ -24,6 +24,8 @@ function isInViewPort(element){
     );
 }
 
+// ===== Start Typewriter =====
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -80,3 +82,5 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+// ===== End Typewriter =====
