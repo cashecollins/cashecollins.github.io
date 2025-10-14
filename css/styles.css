@@ -216,33 +216,58 @@ div.cover-title {
 }
 
 .rent-plus {
-    background-image: url('assets/projects/ensemble-banner.jpg');
+    background-image: url('assets/projects/rent-dynamics.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .ensemble {
-    background-image: url('assets/projects/ensemble-banner.jpg');
+    background-image: url('assets/projects/ensemble.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+}
+
+.impact {
+    background-image: url('assets/projects/impact.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .hcp {
-    background-image: url('assets/projects/hcp-banner.jpg');
+    background-image: url('assets/projects/hcp.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .rails-rest-api {
-    background-image: url('assets/projects/rails-rest-api-banner.jpg');
+    background-image: url('assets/projects/rails-rest-api-banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.devtec-ai {
+    background-image: url('assets/projects/devtec-ai-banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.devtec-ai {
-    background-image: url('assets/projects/devtec-ai-banner.jpg');
+.ccli {
+    background-image: url('assets/projects/ccli-banner.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+}
+
+.feel-good {
+    background-image: url('assets/projects/feel-good-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .project-cell-title {
