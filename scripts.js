@@ -43,7 +43,12 @@
         const ctx = canvas.getContext('2d');
         const hero = canvas.closest('.hero');
         const glow = $('.hero-glow');
-        const COLORS = ['226, 182, 90', '143, 174, 93', '111, 174, 132', '205, 127, 69'];
+        // Particle colors come from the active palette's --c1-rgb ... --c4-rgb tokens.
+        const rootStyles = getComputedStyle(document.documentElement);
+        const COLORS = ['--c1-rgb', '--c2-rgb', '--c3-rgb', '--c4-rgb']
+            .map((token) => rootStyles.getPropertyValue(token).trim())
+            .filter(Boolean);
+        if (!COLORS.length) COLORS.push('255, 255, 255');
         const LINK_DISTANCE = 130;
         const MOUSE_RADIUS = 170;
 
