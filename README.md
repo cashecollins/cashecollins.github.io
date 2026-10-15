@@ -18,6 +18,10 @@ A single-page portfolio built with plain HTML, CSS, and vanilla JavaScript. No f
 - **Projects:** each card is an `article.project`. The modal reads the card's image, kind, title, and tags, plus the `<template class="project-details">` text. Add `data-link` (live site) or `data-repo` (GitHub) to the article to show buttons in the modal.
 - **Stack icons:** the brand icons are inline SVG symbols from [Simple Icons](https://simpleicons.org) (CC0) near the top of `index.html`. Reference one with `<svg class="tech-icon"><use href="#i-name"/></svg>`.
 
+## Colors
+
+The "snowcapped mountain lake" palette (night-lake backgrounds, snow, glacier blue, lake teal, and pine green) lives in the tokens at the top of `css/styles.css`: `--bg-rgb`, `--c1-rgb` through `--c4-rgb`, and a few more. Every color on the page, including the hero particles, reads from them, so changing that one block recolors the whole site.
+
 Motion respects `prefers-reduced-motion`, and all content stays visible with JavaScript turned off.
 
 ## Run locally
