@@ -1238,6 +1238,136 @@ code {
     background: rgba(255, 248, 228, 0.08);
 }
 
+/* ---------- Ideals ---------- */
+
+.ideals {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.ideal {
+    --accent: var(--gold);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: clamp(28px, 3.4vw, 48px);
+}
+
+/* Diagonal pill bars, a nod to the banners on the original Notion page */
+.ideal-bars {
+    position: absolute;
+    top: -40px;
+    right: -60px;
+    z-index: -1;
+    display: grid;
+    gap: 14px;
+    width: 320px;
+    transform: rotate(-38deg);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 45%);
+    mask-image: linear-gradient(90deg, transparent, #000 45%);
+    pointer-events: none;
+}
+
+.ideal-bars span {
+    height: 20px;
+    border-radius: 999px;
+    background: var(--accent);
+    opacity: 0.16;
+    transition: transform 0.9s var(--ease-out), opacity 0.6s;
+}
+
+.ideal-bars span:nth-child(1) { width: 62%; margin-left: 30%; }
+.ideal-bars span:nth-child(2) { width: 80%; margin-left: 12%; opacity: 0.26; }
+.ideal-bars span:nth-child(3) { width: 44%; margin-left: 46%; }
+.ideal-bars span:nth-child(4) { width: 70%; margin-left: 22%; opacity: 0.1; }
+.ideal-bars span:nth-child(5) { width: 18px; margin-left: 58%; opacity: 0.3; }
+
+.ideal:hover .ideal-bars span {
+    transform: translateX(-28px);
+    opacity: 0.32;
+}
+
+.ideal:hover .ideal-bars span:nth-child(even) {
+    transform: translateX(-56px);
+}
+
+.ideal-num {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.ideal-title {
+    max-width: 13ch;
+    font-size: clamp(2rem, 3.6vw, 3.1rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.04em;
+}
+
+.ideal-title em {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.ideal-quote {
+    margin: 0;
+    padding-left: 18px;
+    border-left: 2px solid var(--accent);
+}
+
+.ideal-quote p {
+    font-size: 1.08rem;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.ideal-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--faint);
+}
+
+.ideal-copy {
+    color: var(--muted);
+}
+
+.ideal-more {
+    display: grid;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.ideal-more q {
+    color: var(--text);
+}
+
+.ideal-more q em {
+    font-style: italic;
+}
+
+.ideal-more span {
+    color: var(--faint);
+}
+
+.ideal-more span::before {
+    content: '\2014\00a0';
+}
+
 /* ---------- Experience ---------- */
 
 .xp-list {
@@ -2305,6 +2435,10 @@ code {
 
     .nav-toggle {
         display: block;
+    }
+
+    .ideals {
+        grid-template-columns: 1fr;
     }
 
     .projects {
