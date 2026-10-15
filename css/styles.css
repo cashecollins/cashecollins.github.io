@@ -4,8 +4,8 @@
    ========================================================= */
 
 :root {
-    /* Palette: "snowcapped mountain lake". Everything below reads from these tokens,
-       so a palette is just a block of values (see [data-palette="earth"] further down). */
+    /* Palette: "snowcapped mountain lake". Every color below reads from these tokens,
+       so changing the palette means changing only this block. */
     --bg-rgb: 7, 11, 14;
     --elev-rgb: 13, 21, 26;
     --ink-rgb: 232, 243, 248;       /* light overlays, grid lines, glass */
@@ -44,27 +44,6 @@
     --radius: 28px;
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-}
-
-:root[data-palette="earth"] {
-    --bg-rgb: 10, 11, 8;
-    --elev-rgb: 18, 21, 16;
-    --ink-rgb: 255, 248, 228;
-    --line-rgb: 240, 232, 205;
-    --c1-rgb: 226, 182, 90;         /* antique gold */
-    --c2-rgb: 143, 174, 93;         /* moss */
-    --c3-rgb: 205, 127, 69;         /* red-rock copper */
-    --c4-rgb: 111, 174, 132;        /* sage */
-    --bg-elev-2: var(--bg-elev-2);
-    --text: #f0ebdd;
-    --muted: #a9a693;
-    --faint: #6d6c5c;
-    --aurora-1: #3e6a3a;
-    --aurora-2: #9c7a2a;
-    --aurora-3: #8c4a24;
-    --art-1: #2b2310;
-    --art-2: #15201a;
-    --img-filter: sepia(0.35) saturate(0.6) brightness(0.92);
 }
 
 @property --angle {

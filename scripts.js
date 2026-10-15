@@ -43,7 +43,7 @@
         const ctx = canvas.getContext('2d');
         const hero = canvas.closest('.hero');
         const glow = $('.hero-glow');
-        // Particle colors come from the active palette's --c1-rgb ... --c4-rgb tokens.
+        // Particle colors come from the palette's --c1-rgb ... --c4-rgb tokens in styles.css.
         const rootStyles = getComputedStyle(document.documentElement);
         const COLORS = ['--c1-rgb', '--c2-rgb', '--c3-rgb', '--c4-rgb']
             .map((token) => rootStyles.getPropertyValue(token).trim())
